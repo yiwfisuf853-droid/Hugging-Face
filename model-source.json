@@ -1,0 +1,64 @@
+{
+  "model": "emotion2vec_plus_base",
+  "repository": "https://modelscope.cn/models/iic/emotion2vec_plus_base",
+  "license": "Apache-2.0",
+  "source": [
+    {
+      "path": "config.yaml",
+      "bytes": 3170,
+      "sha256": "50674ec187406b4f1208925594ceaf1f28f16a22333b5f2ac5b3d0cbffdd670e",
+      "revision": "58354f1e5b6c118cf8b175b5b1955d6b07df42c2"
+    },
+    {
+      "path": "configuration.json",
+      "bytes": 343,
+      "sha256": "8b6a745213025c7d4565f9f074cfef1b5cd5ef76e38e2a8f7f8a3db271e735b2",
+      "revision": "58354f1e5b6c118cf8b175b5b1955d6b07df42c2"
+    },
+    {
+      "path": "tokens.txt",
+      "bytes": 120,
+      "sha256": "654625c18ef0f0583441a3b811c20904f2cf30febb716f32e14810b8e6bb715c",
+      "revision": "97b6c3aeb9878641d4721675edd605e1577d0b5d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6152,
+      "sha256": "cb36ab32c3196085453c1c5a9076a0c7fed121a4487ab89a0a36c62e5ad613e0",
+      "revision": "a4a780d91424116a2d46330c045336a6f62a66a1"
+    },
+    {
+      "path": "example/test.wav",
+      "bytes": 131376,
+      "sha256": "a4839eaaa3d54bd2db6eb48aa3d40def1b5c5004df3fd163a8dcd045097f8a23",
+      "revision": "58354f1e5b6c118cf8b175b5b1955d6b07df42c2"
+    },
+    {
+      "path": "model.pt",
+      "bytes": 1118245678,
+      "sha256": "60710b5aae1dbe69bdac8920028fb05882d4314fd09031922b4b61ee9e7aadbd",
+      "revision": "58354f1e5b6c118cf8b175b5b1955d6b07df42c2"
+    }
+  ],
+  "onnx": {
+    "sha256": "c7afda0b32471c8fc8530aa0206af2abafb1585a3aec72db6a7bafeda6637c17",
+    "bytes": 373127283,
+    "funasr": "1.4.16",
+    "opset": 17
+  },
+  "decoder": {
+    "name": "FFmpeg",
+    "version": "7.1-essentials_build-www.gyan.dev",
+    "license": "GPL-3.0-or-later",
+    "distribution": "imageio-ffmpeg Windows x86_64 binary",
+    "source": "https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz",
+    "buildProvider": "https://www.gyan.dev/ffmpeg/builds/"
+  },
+  "runtime": {
+    "node": "../native-inference/node.exe",
+    "onnxruntime": "../native-inference/node_modules/onnxruntime-node",
+    "provider": "cpu",
+    "sampleRate": 16000,
+    "windowSeconds": 20
+  }
+}
